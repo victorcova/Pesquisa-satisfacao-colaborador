@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pesquisa - Gestão Paricipativa</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+<script>
+//Submit form with id function
+function submit_by_id() {	
+	var mensagem = document.getElementById("message").value;    
+	//alert(mensagem);
+	
+	if(mensagem.length >= 20)// validação
+	  { 		
+	    document.getElementById("pesquisa").submit();//form submission	    
+	  }
+	else{
+		alert("Mensagem não enviada. Por favor preencha corretamente a sua mensagem. Minimo: 20 caracteres.");
+		
+	}
+}	
+</script>	
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+
+<!-- logo -->	
+<div id="menu" class="navbar navbar-default navbar-fixed-top" align="center">
+  <div class="container" align="center">     
+      <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo/logo-4155.png"/></a>
+  </div>  
+</div>
+	
+	
+<!-- Header -->
+<header id="header">
+  <div class="intro text-center">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="intro-text">
+            <h1><strong>COLABORADOR</strong></h1>
+            <h1><span class="brand">VOCÊ É FUNDAMENTAL</span></h1>
+            <p>Visando uma gestão participativa, queremos ouvir você.<br>
+              Conte para nós as suas ideias, críticas, perguntas e dúvidas.<br>
+            A sua participação abaixo é anônima e não é obrigatória.              <br>
+            <br>
+<br>
+            </p>
+            <a href="#contact" class="btn btn-default btn-lg page-scroll">PARTICIPE AGORA</a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Services Section -->
+<!-- About Section -->
+<!-- Portfolio Section --><!-- Team Section --><!-- Contact Section -->
+<div id="contact" class="text-center">
+  <div class="overlay">
+    <div class="container">
+      <div class="col-md-8 col-md-offset-2 section-title">
+        <h2><strong>PESQUISA DE SATISFAÇÃO</strong></h2>       
+      		  
+Prezado(a) colaborador(a) muito obrigado pela sua visita. <br>
+<strong>Informe no campo abaixo as suas ideias, críticas, perguntas e dúvidas:</strong>
+<form name="pesquisa" id="pesquisa" action="salva_pesquisa.php" method="post" novalidate>
+          <div class="form-group">
+            <textarea name="message" id="message" class="form-control" rows="20" placeholder="Digite aqui..." required></textarea>
+            <p class="help-block text-danger"></p>			
+          </div>
+          <div id="success"></div>			
+	
+          <input class="btn btn-default" value="Registrar" type="button" name="submit_id" id="btn_id" onclick="submit_by_id()" />
+		<br>
+        </form>
+        <div class="social">
+          <ul>
+            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fa fa-youtube-play"></i></a></li>  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="container text-center">
+    <div class="fnav">
+      <p>Copyright &copy; VICTOR COVA.</p>
+    </div>
+  </div>
+</div>
+
+<script charset="utf-8" type="text/javascript" src="js/validar.js"></script>	
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="js/contact_me.js"></script> 
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
