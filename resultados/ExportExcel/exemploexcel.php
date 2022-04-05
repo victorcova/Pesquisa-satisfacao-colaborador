@@ -1,10 +1,10 @@
 <?php
-// NECESSÁRIO CHMOD777
+// NECESSï¿½RIO CHMOD777
 
    //Incluir a classe excelwriter
    include("excelwriter.inc.php");
 
-   //Você pode colocar aqui o nome do arquivo que você deseja salvar.
+   //Vocï¿½ pode colocar aqui o nome do arquivo que vocï¿½ deseja salvar.
     $excel=new ExcelWriter("registros_pesquisa.xls");
 
     if($excel==false){
@@ -16,7 +16,7 @@
    $excel->writeLine($myArr);
 
    //Seleciona os campos de uma tabela
-	$conn = mysql_connect("pesquisa4364.mysql.dbaas.com.br", "pesquisa4364", "P3Squis4__4364") or die ('Nao foi possivel conectar ao banco de dados! Erro: ' . mysql_error());
+	$conn = mysql_connect("xxxxxxxxxxxxxxxxxxxxxxxxx", "xxxxxxxxxxxxxxxxxxxxxxxxx", "xxxxxxxxxxxxxxxxxxxxxxxxx") or die ('Nao foi possivel conectar ao banco de dados! Erro: ' . mysql_error());
 	if($conn)
 	{
 	mysql_select_db("pesquisa4364", $conn);
